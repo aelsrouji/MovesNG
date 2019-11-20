@@ -1,0 +1,11 @@
+<h2>My Moves</h2>
+
+<ul class="moves">
+  <li *ngFor="let move of moves" (click)="onSelect(move)"
+    [class.selected]="move === selectedMove">
+    <span class="badge"> {{move.id}} </span> {{move.name}} - {{move.year}}
+  </li>
+</ul>
+
+<app-move-detail [move]="selectedMove"></app-move-detail>
+

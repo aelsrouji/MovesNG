@@ -1,0 +1,17 @@
+<div *ngIf="move">
+
+  <h2>{{move.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{move.id}}</div>
+  <div>
+    <label>
+      name:
+      <input [(ngModel)]="move.name" placeholder="name" />
+    </label>
+    <label>
+      year:
+      <input [(ngModel)]="move.year" placeholder="year" />
+    </label>
+  </div>
+
+</div>
+
